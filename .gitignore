@@ -1,157 +1,35 @@
-Last login: Mon Jun 19 17:33:40 on ttys000
-[WARN] - (starship::utils): Executing command "/usr/local/bin/python" timed out.
-[WARN] - (starship::utils): You can set command_timeout in your config to a higher value to allow longer-running commands to keep executing.
+# compiled output
+/dist
+/node_modules
 
-~ via  v18.14.2 via 🐍 v3.10.4 on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc
-❯ cd programing
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 
-~/programing on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc
-❯ ls
-C				machine_learning
-ML				my-anime-ranking
-algo_anser.zip			my_app
-algo_exam			otoshimono-front
-algorithms			portfolio
-apollo				portfolio-test
-atcode				python
-blog				rails
-clean-architecture-api		react
-clean-architecture-sample	school-festival-hackathon-2022
-cleanar				share-photo
-docker_test			test-------
-firestore_clean_architecture	tmp
-go				vim
-go-clean-arch			webApp
-home				wordapp
-homepage			りあクト!
-javascript			名称未設定フォルダ
-jphacks				課外プロジェクト
-linebot
+# OS
+.DS_Store
 
-~/programing on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc
-❯ mkdir group-buy
+# Tests
+/coverage
+/.nyc_output
 
-~/programing on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc
-❯ cd group-buy
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
-~/programing/group-buy on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc
-❯ ls
-
-~/programing/group-buy on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc
-❯ git clone git@github.com:yuorei/group-buy-back.git
-Cloning into 'group-buy-back'...
-warning: You appear to have cloned an empty repository.
-
-~/programing/group-buy on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc took 2s
-❯ mkdir
-group-buy-back
-usage: mkdir [-pv] [-m mode] directory_name ...
-zsh: command not found: group-buy-back
-
-~/programing/group-buy on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc
-❯ mkdir group-buy-back
-mkdir: group-buy-back: File exists
-
-~/programing/group-buy on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc
-❯ ls
-group-buy-back
-
-~/programing/group-buy on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc
-❯ open .
-
-~/programing/group-buy on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc
-❯ rm -r group-buy-back
-
-~/programing/group-buy on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc
-❯ mkdir group-buy-back
-
-
-~/programing/group-buy on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc
-❯ mkdir group-buy-front
-
-~/programing/group-buy on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc
-❯ cd group-buy-front
-
-programing/group-buy/group-buy-front on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc
-.nfs*
-
-.yarn-integrity
-Thumbs.db:encryptable
-ehthumbs.db
-❯ ls
-
-programing/group-buy/group-buy-front on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc
-❯ git init
-Initialized empty Git repository in /Users/itoyuta/programing/group-buy/group-buy-front/.git/
-
-group-buy-front on  main on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc
-❯ echo "# group-buy-front" >> README.md
-
-group-buy-front on  main [?] on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc
-❯ rm README.md
-
-group-buy-front on  main on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc
-❯ vim .gitignore
-
-group-buy-front on  main [?] on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc took 1m15s
-❯ vim .git
-
-group-buy-front on  main [?] on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc took 3s
-❯ vim .gitignore
-
-group-buy-front on  main [?] on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc took 6s
-❯ git status
-On branch main
-
-No commits yet
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	.gitignore
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-group-buy-front on  main [?] on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc
-❯ git add .gitignore
-
-group-buy-front on  main [+] on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc
-❯ code .
-
-group-buy-front on  main [+] on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc
-❯ git commit -m
-error: switch `m' requires a value
-
-group-buy-front on  main [+] on ☁️  (ap-northeast-1) on ☁️  yuorei@stack.inc
-❯ git commit -m "add gitignore"
-[main (root-commit) 18e7ca1] add gitignore
- 1 file changed, 263 insertions(+)
- create mode 100644 .gitignore
-
-.nfs*
-.yarn-integrity
-
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
-
-# Dump file
-*.stackdump
-
-# Folder config file
-[Dd]esktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msix
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# End of https://www.toptal.com/developers/gitignore/api/node,macos,windows,linux
-
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
