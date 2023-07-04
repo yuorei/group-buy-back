@@ -12,7 +12,7 @@ services:
       - db
     command: >
       /bin/sh -c '
-      npx prisma db push &&
+      npx prisma db push --accept-data-loss &&
       npm run start'
   db:
     image: postgres:latest
