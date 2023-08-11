@@ -36,7 +36,7 @@ export const createRecruitment = async ({
   return recruitment;
 };
 
-interface FindRecruitmentsInput {
+export interface FindRecruitmentsInput {
   name: string;
   groupId: number;
 }
