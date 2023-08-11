@@ -2,7 +2,7 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-interface CreateRecruitmentInput {
+export interface CreateRecruitmentInput {
   userId: number;
   groupId?: number;
   name: string;
@@ -36,7 +36,7 @@ export const createRecruitment = async ({
   return recruitment;
 };
 
-interface FindRecruitmentsInput {
+export interface FindRecruitmentsInput {
   name: string;
   groupId: number;
 }
