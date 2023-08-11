@@ -2,7 +2,7 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-interface CreateUserInput {
+export interface CreateUserInput {
   name: string;
   displayName: string;
   password: string;
@@ -24,7 +24,7 @@ export const createUser = async ({
   return user;
 };
 
-interface FindUsersInput {
+export interface FindUsersInput {
   id?: number;
   name?: string;
   groupId?: number;

@@ -2,7 +2,7 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-interface CreateGroupInput {
+export interface CreateGroupInput {
   name: string;
   adminUserId: number;
 }
@@ -23,7 +23,7 @@ export const createGroup = async ({ name, adminUserId }: CreateGroupInput) => {
   return group;
 };
 
-interface FindGroupInput {
+export interface FindGroupInput {
   name?: string;
 }
 
