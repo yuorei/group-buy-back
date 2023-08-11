@@ -11,12 +11,11 @@ import { UserResult } from '../entity/user.entity'
 export class UsersService {
   private prisma = new PrismaClient();
 
-  async findOne(id: number): Promise<UserResult> {
+  async findOne(name: string): Promise<UserResult> {
     try {
-      // IDを使ってUser情報を取得
       const user = await this.prisma.user.findUnique({
         where: {
-          id: id,
+          name: name,
         },
       });
 
