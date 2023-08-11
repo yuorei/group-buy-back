@@ -37,7 +37,7 @@ export const findGroups = async ({ name }: FindGroupInput) => {
   return groups;
 };
 
-interface JoinGroupInput {
+export interface JoinGroupInput {
   userId: number;
   groupId: number;
   isAdmin: boolean;
