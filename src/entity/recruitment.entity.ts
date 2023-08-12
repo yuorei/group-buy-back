@@ -1,8 +1,13 @@
 export interface CreateRecruitmentBody {
-    groupId ?: number;
+    groupId?: number;
     name: string;
     description: string;
-    maxMember ?: number;
+    maxMember?: number;
     price: number;
-    deadline ?: Date;
+    deadline?: Date;
+}
+
+export interface FindRecruitmentsBody {
+    name: string;
+    groupId?: number;
 }

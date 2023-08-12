@@ -2,12 +2,13 @@ import {
     Body,
     Controller,
     Post,
+    Get,
     Request,
     UseGuards
 } from '@nestjs/common';
 import { AuthGuard } from '../auth/auth.guard';
 import { RecruitmentService } from '../service/recruitment.service';
-import { CreateRecruitmentBody } from '../entity/recruitment.entity';
+import { CreateRecruitmentBody, FindRecruitmentsBody } from '../entity/recruitment.entity';
 
 @Controller("item")
 export class RecruitmentController {
@@ -23,4 +24,9 @@ export class RecruitmentController {
         });
     }
 
+    @Get()
+    getRecruitment(@Body() recruitment: FindRecruitmentsBody,) {
+        return this.recruitmentService.getRecruitment(recruitment.name, recruitment.groupId)
+    };
 }
+
